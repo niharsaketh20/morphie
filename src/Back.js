@@ -3,6 +3,7 @@ import React from "react";
 import {StlViewer} from "react-stl-viewer";
 import base from './Base.stl'
 
+
 export default function Back({isSubmit, setIsSubmit}){
     function handleCha(event) {
         setIsSubmit(false);
@@ -23,7 +24,7 @@ return(
             url={base}
             />
         </div>
-        <button className="generates" onClick={handleCha}>Go Back Again</button>
+        <button className="generates" onClick={handleCha}>Back!</button>
     </div>
 )
 }

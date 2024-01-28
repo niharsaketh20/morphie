@@ -3,8 +3,35 @@
     margin: 0;
     padding: 0;
     z-index: 0;
-    
+    font-family: 'Bebas Neue', sans-serif;
+    z-index: 1;;
  }
+ .what{
+  height: 100vh;
+  width: auto;
+  z-index: -1;
+ }
+
+ .download{
+  height: 40px;
+  position: absolute;
+  right: 650px;
+  top:700px;
+  margin-top: 10px;
+  background-color: rgb(251, 251, 251);
+  background-color: #777e74;
+  border: 1px solid;
+  border-radius: 7px;
+  width: 190px;
+  z-index: 1;
+}
+.download:hover{
+cursor: pointer;
+transform: translateY(-2.5px);
+transition: transform 0.2s ;
+background-color:  blanchedalmond;
+border: 0.5px solid;
+}
 
  .all{
   position: relative;
@@ -14,8 +41,9 @@
   top: 0;
   width: 100%;
   display: flex;
+  color: whitesmoke;
   justify-content: center; /** X-axis align **/
-  font-family: Sen;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1.5px;
   font-size: 102px;
   margin-top: 10px;
@@ -38,12 +66,14 @@
 }
 
 .input-box-div{
-    margin-left: 200px;
+    margin-left: 380px;
     margin-top: 150px;
     z-index: 1;
+    display: flex;
     position: absolute;
     left: 20px;
     top :50px;
+    margin-top: 250px;;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
@@ -51,41 +81,33 @@
 }
 .input-box{
     float: left;
+    background-color: transparent;
     width: 600px;
     height: 40px;
+    color: whitesmoke;
     font-size: 18px;
     border: 1px solid;
     border-radius: 6px;
     padding-left: 5px;
     z-index: 1;
 }
-.dropdown{
-    height: 36px;
-    width: 100px;
-    margin-left: 100px;
-    border: 1px solid;
-    border-radius: 6px;
-    z-index: 1;
-}
-.bag {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.input-box::placeholder{
+  color: white;
+  text-align: center;
 }
 .generate{
     height: 40px;
     display: block; 
     width: max-content; 
-    margin-top: 50px;
-    margin-left: 300px;
-    background-color: rgb(251, 251, 251);
+    margin-left: 80px;
+    background-color: #777e74;
     border: 1px solid;
     border-radius: 7px;
     width: 100px;
     z-index: 1;
+}
+.but{
+margin-left: 320px;
 }
 .Gen{
   display: flex;
@@ -93,16 +115,22 @@
   justify-content: center;
   z-index: 1;
   height: 100vh;
-  background: linear-gradient(250deg, #FFF3FD 0.41%, rgba(255, 222, 249, 1.00) 0.42%, rgba(255, 198, 238, 0.99) 0.43%, rgba(255, 117, 166, 0.93) 91.26%);
+  background: linear-gradient(250deg, rgba(0, 0, 0, 0.65) -5.54%, #000 -5.54%, rgba(0, 0, 0, 0.53) 99.7%, rgba(0, 0, 0, 0.67) 99.7%);
 }
-.generates{
+  .generates{
     position: absolute;
-    bottom: 20%;
+    bottom: 10%;
     background-color: rgb(251, 251, 251);
     border: 1px solid;
-    border-radius: 7px;
-    width: 100px;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    padding-left: 3px;
+    padding-right: 3px;
     z-index: 1;
+    font-size: 20px;
+    letter-spacing: 1px;
+    box-shadow: 1px 1.5px 1px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .generates:hover{
   cursor: pointer;

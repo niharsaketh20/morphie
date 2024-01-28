@@ -13,7 +13,7 @@ function Content( {isSubmit,setIsSubmit , url , setUrl}) {
   const [option, setOption] = useState("")
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/get_obj_file")
+    fetch("http://127.0.0.1:5000/get_obj_file")
       .then(response => response.json())
       .then(data => {
         setData(data.file)
@@ -46,25 +46,42 @@ function Content( {isSubmit,setIsSubmit , url , setUrl}) {
   
 
   function handleInput(event){
-    setInput(event.target.value);
-    console.log(input)
+    setInput(event.target.value)
+    console.log(input.prompt)
   }
   const handleChange = (e) => {
     setOption(e.target.value);
-    console.log(option)
   };
 
   function handleSubmit(event){
     event.preventDefault()
     setIsSubmit(true);
+    if (isSubmit === true){
+      fetch('http://api.morphie.design/', {
+  method: 'POST', // Use the POST method
+  headers: {
+    'Content-Type': 'application/json', // Set the content type to JSON
+  },
+  body: JSON.stringify(`prompt: ${input}`), // Convert the data to JSON and send it as the request body
+})
+  .then((response) => response.json())
+  .then((data) => {
+    // Handle the response from the API
+    console.log(data);
+  })
+  .catch((error) => {
+    // Handle errors here
+    console.error(error);
+  });
+    }
+
   }
 
   return (
     <div className="App">
       <header className="App-header">
         <div className='all'>
-
-        <img className= "bag" src={bag} alt='good job'/>
+        
           <div className='name-div'>
           <h1 className='name'>MORPHIE</h1>
           </div>
@@ -75,16 +92,10 @@ function Content( {isSubmit,setIsSubmit , url , setUrl}) {
             className='input-box'
             onChange={handleInput}
             value={input}/>
-            <label htmlFor="dropdown"></label>
-            <select id="dropdown" className='dropdown' value={option} onChange={handleChange}>
-              <option value=".obj">.obj</option>
-              <option value="iframe">iframe</option>
-              <option value=".stl">.stl</option>
-            </select>
           </form>
           <button className='generate' onClick={() =>setIsSubmit(true)}>Generate</button>
-          <button onClick={() =>download(blob, 'file.obj')}> download</button>
         </div>
+        <button onClick={() =>download(blob, 'file.obj')} className='download'> download</button>
         </div>
       </header>
     </div>
