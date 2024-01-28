@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+
+@keyframes moveUp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-5px); 
+    }
+  }
+
+.input-box-div{
+    margin-left: 200px;
+    margin-top: 200px;
+
+}
+.input-box{
+    width: 600px;
+    height: 30px;
+    font-size: 18px;
+}
+.dropdown{
+    height: 36px;
+    width: 100px;
+    margin-left: 100px;
+}
+.generate{
+    height: 40px;
+    width: 200px;
+    display: block; 
+    width: max-content; 
+    margin-top: 50px;
+    margin-left: 300px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 5px;
+}
+.generate:hover{
+    cursor: pointer;
+    transform: translateY(-2.5px);
+    transition: transform 0.2s ;
+    background-color: antiquewhite;
+}
