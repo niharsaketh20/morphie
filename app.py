@@ -1,7 +1,10 @@
 from flask import Flask, jsonify
 import base64
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 def read_obj_file(file_path):
     with open(file_path, 'rb') as file:
