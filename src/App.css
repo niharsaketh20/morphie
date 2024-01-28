@@ -17,7 +17,7 @@
   justify-content: center; /** X-axis align **/
   font-family: Sen;
   letter-spacing: 1.5px;
-  font-size: 45px;
+  font-size: 102px;
   margin-top: 10px;
   z-index: 1;
  }
@@ -87,10 +87,39 @@
     width: 100px;
     z-index: 1;
 }
+.Gen{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  height: 100vh;
+  background: linear-gradient(250deg, #FFF3FD 0.41%, rgba(255, 222, 249, 1.00) 0.42%, rgba(255, 198, 238, 0.99) 0.43%, rgba(255, 117, 166, 0.93) 91.26%);
+}
+.generates{
+    position: absolute;
+    bottom: 20%;
+    background-color: rgb(251, 251, 251);
+    border: 1px solid;
+    border-radius: 7px;
+    width: 100px;
+    z-index: 1;
+}
+.generates:hover{
+  cursor: pointer;
+  transform: translateY(-2.5px);
+  transition: transform 0.2s ;
+  background-color:  blanchedalmond;
+  border: 0.5px solid;
+}
 .generate:hover{
   cursor: pointer;
   transform: translateY(-2.5px);
   transition: transform 0.2s ;
   background-color:  blanchedalmond;
   border: 0.5px solid;
+}
+
+.rend{
+  z-index: 1;
+  color: black;
 }
