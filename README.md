@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+# Morphie: Text to 3D Object Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Morphie is an innovative tool that transforms text descriptions into 3D object files. With Morphie, you can bring your ideas to life in three dimensions, simply by describing them in words.
+
+## How It Works
+
+1. Input your text description
+2. Morphie processes your text using advanced AI algorithms
+3. A 3D object file (.obj) is generated based on your description
+4. Download and use your 3D object in various applications
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm (v6 or later)
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/morphie.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd morphie
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+
+4. Start the application:
+   ```
+   npm start
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view Morphie in your browser.
+
+## Usage
+
+1. Enter your text description in the input field.
+2. Click "Generate 3D Object".
+3. Wait for the processing to complete.
+4. Download your .obj file.
 
 ## Available Scripts
 
@@ -8,7 +53,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -16,18 +61,12 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+It bundles React in production mode and optimizes the build for the best performance.
 
 ### `npm run eject`
 
@@ -35,36 +74,18 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn more about Morphie and its capabilities, check out our [documentation](https://morphie-docs.example.com).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+Morphie is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Support
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you encounter any issues or have questions, please file an issue on our [GitHub repository](https://github.com/yourusername/morphie/issues).
